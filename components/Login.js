@@ -16,7 +16,7 @@ export default function Login() {
   async function handleSubmit() {
     // Check for empty email or password and password length
     if (!email || !password || password.length < 7) {
-      alert("Password must be at least 7 characters long."); // Notify the user about password length
+      alert("Required Both Email and Password must be at least 7 characters long.");
       return;
     }
 
