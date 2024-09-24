@@ -46,6 +46,7 @@ export default function Login() {
         }}
         className="w-full max-w-[400px] mx-auto px-3 duration-200 hover:border-indigo-600 focus:border-indigo-600 py-2 sm:py-3 border border-solid border-indigo-400 rounded-full outline-none"
         placeholder="Email"
+        required
       />
       <input
         value={password}
@@ -55,6 +56,8 @@ export default function Login() {
         className="w-full max-w-[400px] mx-auto px-3 duration-200 hover:border-indigo-600 focus:border-indigo-600 py-2 sm:py-3 border border-solid border-indigo-400 rounded-full outline-none"
         placeholder="Password"
         type="password"
+        minLength={7}
+        required
       />
       <div className="max-w-[400px] w-full mx-auto">
         <Button
