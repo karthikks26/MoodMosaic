@@ -65,7 +65,7 @@ export default function Dashboard() {
         }
       }, { merge: true })
     } catch (err) {
-      console.log('Failed to set data: ', err.message)
+      alert('Failed to set data: ', err.message)
     }
   }
 
