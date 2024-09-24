@@ -20,14 +20,14 @@ export default function Login() {
     setAuthenticating(true);
     try {
       if (isRegister) {
-        console.log("Signing up a new user");
+        alert("Signing up a new user");
         await signup(email, password);
       } else {
-        console.log("Logging in existing user");
+        alert("Logging in existing user");
         await login(email, password);
       }
     } catch (err) {
-      console.log(err.message);
+      alert(err.message);
     } finally {
       setAuthenticating(false);
     }
